@@ -7,6 +7,10 @@ on:
     branches: [main]
     tags:
       - "v*.*.*"
+    paths:
+      # NOTE: Path filters are ignored for tag pushes
+      - "src/services/image_recognition/**"
+      - "tests/image_recognition/**"
 jobs:
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
