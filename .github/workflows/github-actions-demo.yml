@@ -7,11 +7,11 @@ on:
     branches: [main]
     tags:
       - "v*.*.*"
-    paths:
+    # paths:
       # NOTE: Path filters are ignored for tag pushes
-      - "src/services/image_recognition/**"
-      - "tests/image_recognition/**"
-      - ".github/workflows/github-actions-demo.yml"
+      # - "src/services/image_recognition/**"
+      # - "tests/image_recognition/**"
+      # - ".github/workflows/github-actions-demo.yml"
 jobs:
   GitHub-Actions-Push-Event:
     runs-on: ubuntu-latest
