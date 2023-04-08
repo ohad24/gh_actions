@@ -31,7 +31,7 @@ jobs:
   Explore-GitHub-Releases:
     runs-on: ubuntu-latest
     # if: ${{ github.ref == 'refs/tags/v*.*.*' }}
-    # if: ${{ github.event_name == 'release' && github.event.action == 'released' }}
+    if: ${{ github.event_name == 'release' && github.event.action == 'released' }}
     steps:
       - uses: actions/checkout@v1
       - name: Dump GitHub context
